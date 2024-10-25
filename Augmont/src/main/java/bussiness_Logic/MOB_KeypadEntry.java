@@ -42,7 +42,7 @@ public class MOB_KeypadEntry implements Nlp {
 		String Email = (String) attributes.get("String");
 
 		try {
-			AndroidDriver driver = (AndroidDriver) nlpRequestModel.getDriver().getSpecificIDriver();
+			AndroidDriver driver = (AndroidDriver) nlpRequestModel.getAndroidDriver();
 			char[] c = Email.toCharArray();
 			for (int i = 0; i < c.length; i++) {
 
